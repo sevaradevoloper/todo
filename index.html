@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Simple To-Do List</title>
+    <title>To-Do List</title>
 </head>
 
 <body>
-       <form action="#">
-               <div>
-            <input type="text" name="text" id="text" placeholder=" " required>
-                    <label class="label" for="text">New task</label>
+    <form action="#">
+        <div class="box">
+            <div>
+                <input type="text" name="text" id="text" placeholder=" " required>
+                <label class="label" for="text">New task</label>
+            </div>
+
+            <button type="button" onclick="addToDo()">Add</button>
         </div>
 
-               <button type="button" onclick="addToDo()">Add</button>
+        <ul class="task__list" id="taskList">
+        </ul>
 
-                      <ul class="task__list" id="taskList">
-                   </ul>
 
-           </form>
+    </form>
 
-       
+
+
     <script src="./js/main.js"></script>
 </body>
 
